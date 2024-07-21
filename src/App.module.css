@@ -3,41 +3,49 @@
     grid-template-rows: 50px 1fr 100px;
     grid-template-columns: 200px 1fr;
     grid-template-areas:
-        "header header"
-        "navbar sidebar"
-        "footer footer";
+        "h h"
+        "n s"
+        "f f";
     height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
 .header {
-    grid-area: header;
-    background-color: #f1f1f1;
-    border-bottom: 1px solid #ccc;
+    grid-area: h;
+    background-color: #e0f7fa;
+    border-bottom: 1px solid #b2ebf2;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2em;
+    color: #00796b;
+    padding: 0 20px;
 }
 
 .navbar {
-    grid-area: navbar;
-    background-color: #f9f9f9;
+    grid-area: n;
+    background-color: #f1f8e9;
     overflow-y: auto;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #dcedc8;
     padding: 10px;
+    color: #558b2f;
 }
 
 .sidebar {
-    grid-area: sidebar;
-    background-color: #fff;
+    grid-area: s;
+    background-color: #ffffff;
     overflow-y: auto;
     padding: 10px;
+    color: #616161;
 }
 
 .footer {
-    grid-area: footer;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ccc;
+    grid-area: f;
+    background-color: #e0f7fa;
+    border-top: 1px solid #b2ebf2;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1em;
+    color: #00796b;
 }
